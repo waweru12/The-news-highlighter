@@ -3,146 +3,182 @@
 {% block content %}
 
 
-<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 
-<link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Kanit|Source+Serif+Pro|Titillium+Web&display=swap" rel="stylesheet">
-
-<div class="row">
+<link
+    href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Kanit|Source+Serif+Pro|Titillium+Web&display=swap"
+    rel="stylesheet">
+<div class="container" style="background-color:burlywood">
+    <div class="row">
         <div class="top_headlines">
-          <div class="col-sm-12 col-md-12">
-            <h2 style="text-align: center">HEADLINES TODAY</h2>
-          </div>
-          <div class="col-sm-12 col-md-12">
-            <ul>
-              {{macro.displayTopHeadlines(headlines)}}
-            </ul>
-          </div>
+            <div class="col-sm-12 col-md-12">
+                <h2 style="text-align: center">HEADLINES TODAY</h2>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <ul>
+                    {{macro.displayTopHeadlines(headlines)}}
+                </ul>
+            </div>
         </div>
-      </div>
+    </div>
 
-<div class="col-sm-12 col-md-12"style="">
+
+    <div class="col-sm-12 col-md-12">
         <h2 style="text-align: center">HOT HEADLINES TODAY</h2>
-      </div>
-<br>
-<br>
+    </div>
+    <br>
+    <br>
 
-<div class="all">
+    <div class="all">
         <ul class="row">
-          
-   <h1 style="text-align: center">kEEP YOURSELF UPDATED WITH THE LATEST NEWS </h1>
-   <div class="category">
-              
-        <div class="col-sm-12 col-md-12">
-          
-          
-            <h3>                                  Entertainment                                   News</h3>
 
-        </div>
-        <ul class="row">
-          
+            <h1 style="text-align: center">kEEP YOURSELF UPDATED WITH THE LATEST NEWS </h1>
+            <div class="category">
 
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"style="color:green;">
-<li class="text-center"> 
-  <h4>Buzzfeed</h4>
-  <hr>
-  <h5>BuzzFeed is a cross-platform, global network for news and entertainment that generates seven billion views each month.</h5>
-  <a href="https://www.buzzfeed.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/buzzfeed"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>Daily Mail</h4>
-  <hr>
-  <h5>All the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on Sunday newspapers.</h5>
-  <a href="http://www.dailymail.co.uk/home/index.html"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/daily-mail"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>Entertainment Weekly</h4>
-  <hr>
-  <h5>Online version of the print magazine includes entertainment news, interviews, reviews of music, film, TV and books, and a special area for magazine subscribers.</h5>
-  <a href="http://www.ew.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/entertainment-weekly"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>IGN</h4>
-  <hr>
-  <h5>IGN is your site for Xbox One, PS4, PC, Wii-U, Xbox 360, PS3, Wii, 3DS, PS Vita and iPhone games with expert reviews, news, previews, trailers, cheat codes, wiki guides and walkthroughs.</h5>
-  <a href="http://www.ign.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/ign"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>Mashable</h4>
-  <hr>
-  <h5>Mashable is a global, multi-platform media and entertainment company.</h5>
-  <a href="http://mashable.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/mashable"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>MTV News</h4>
-  <hr>
-  <h5>The ultimate news source for music, celebrity, entertainment, movies, and current events on the web. It's pop culture on steroids.</h5>
-  <a href="http://www.mtv.com/news"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/mtv-news"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>MTV News (UK)</h4>
-  <hr>
-  <h5>All the latest celebrity news, gossip, exclusive interviews and pictures from the world of music and entertainment.</h5>
-  <a href="http://www.mtv.co.uk/news"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/mtv-news-uk"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>Polygon</h4>
-  <hr>
-  <h5>Polygon is a gaming website in partnership with Vox Media. Our culture focused site covers games, their creators, the fans, trending stories and entertainment news.</h5>
-  <a href="http://www.polygon.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/polygon"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece">
-<li class="text-center">
-  <h4>The Lad Bible</h4>
-  <hr>
-  <h5>The LAD Bible is one of the largest community for guys aged 16-30 in the world. Send us your funniest pictures and videos!</h5>
-  <a href="http://www.theladbible.com"><button type="button" class="btn btn-info"> Visit Website</button></a>
-  <a href="/source/the-lad-bible"><button type="button" class="btn btn-info">  Explore News Articles</button></a>
-</li>
-</div>
+                <div class="col-sm-12 col-md-12">
 
 
+                    <h3> Entertainment News</h3>
+
+                </div>
+                <ul class="row">
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                        style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>Buzzfeed</h4>
+                            <hr>
+                            <h5>BuzzFeed is a cross-platform, global network for news and entertainment that generates
+                                seven billion views each month.</h5>
+                            <a href="https://www.buzzfeed.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/buzzfeed"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>Daily Mail</h4>
+                            <hr>
+                            <h5>All the latest news, sport, showbiz, science and health stories from around the world
+                                from the Daily Mail and Mail on Sunday newspapers.</h5>
+                            <a href="http://www.dailymail.co.uk/home/index.html"><button type="button"
+                                    class="btn btn-info"> Visit Website</button></a>
+                            <a href="/source/daily-mail"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>Entertainment Weekly</h4>
+                            <hr>
+                            <h5>Online version of the print magazine includes entertainment news, interviews, reviews of
+                                music, film, TV and books, and a special area for magazine subscribers.</h5>
+                            <a href="http://www.ew.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/entertainment-weekly"><button type="button" class="btn btn-info"> Explore
+                                    News Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>IGN</h4>
+                            <hr>
+                            <h5>IGN is your site for Xbox One, PS4, PC, Wii-U, Xbox 360, PS3, Wii, 3DS, PS Vita and
+                                iPhone games with expert reviews, news, previews, trailers, cheat codes, wiki guides and
+                                walkthroughs.</h5>
+                            <a href="http://www.ign.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/ign"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>Mashable</h4>
+                            <hr>
+                            <h5>Mashable is a global, multi-platform media and entertainment company.</h5>
+                            <a href="http://mashable.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/mashable"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                     style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>MTV News</h4>
+                            <hr>
+                            <h5>The ultimate news source for music, celebrity, entertainment, movies, and current events
+                                on the web. It's pop culture on steroids.</h5>
+                            <a href="http://www.mtv.com/news"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/mtv-news"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>MTV News (UK)</h4>
+                            <hr>
+                            <h5>All the latest celebrity news, gossip, exclusive interviews and pictures from the world
+                                of music and entertainment.</h5>
+                            <a href="http://www.mtv.co.uk/news"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/mtv-news-uk"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>Polygon</h4>
+                            <hr>
+                            <h5>Polygon is a gaming website in partnership with Vox Media. Our culture focused site
+                                covers games, their creators, the fans, trending stories and entertainment news.</h5>
+                            <a href="http://www.polygon.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/polygon"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 piece"
+                    style="font-family:fantasy; ">
+                        <li class="text-center">
+                            <h4>The Lad Bible</h4>
+                            <hr>
+                            <h5>The LAD Bible is one of the largest community for guys aged 16-30 in the world. Send us
+                                your funniest pictures and videos!</h5>
+                            <a href="http://www.theladbible.com"><button type="button" class="btn btn-info"> Visit
+                                    Website</button></a>
+                            <a href="/source/the-lad-bible"><button type="button" class="btn btn-info"> Explore News
+                                    Articles</button></a>
+                        </li>
+                    </div>
+
+
+                </ul>
+
+            </div>
         </ul>
-      
-        <div class="col-sm-12 col-md-12">
-          
+    </div>
+</div>
 
-
-
-    
-
-   
 {% endblock %}
 
-    </div>
+
 </ul>
