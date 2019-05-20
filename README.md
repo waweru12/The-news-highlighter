@@ -25,7 +25,6 @@ This is an online news platform that provides a list of global news sources and 
 
 
 ## Technologies Used
-* CSS for styling.
 * HTML for webpage design.
 * Python3.7.
 * Flask
