@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Kanit|Source+Serif+Pro|Titillium+Web&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+
+        <div class="row">
+                <div class="col-md-8">
+                        <div class="output card">
+
+            <h3> Found {{ articles| count }} matches </h3>
+            <hr>
+            {% for article in articles %}
+            <ul>
+               
+                <h2>{{article.title}}</h2>
+                <hr>
+                <h3>{{article.author}}</h3>
+                <br>
+                <h4><img src="{{article.urlToImage}}" alt="{{ article.title }} " class="img-responsive"></h4>
+                <br>
+                <h4>{{article.content}} <a href="{{article.url}}">vist site</a></h4>
+                <p>{{article.description}} <a href="{{article.url}}">vist site</a></p>
+                <br>
+                <h4>{{article.pubh4shedAT}}</h4>
+                <br>
+                <hr>
+                <br>
+                <hr>
+                
+            </ul>
+            {% endfor %}
+            </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
+    
+    
+</body>
+</html>
